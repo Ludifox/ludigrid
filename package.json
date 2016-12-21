@@ -1,0 +1,30 @@
+{
+  "name": "ludigrid",
+  "version": "1.0.0",
+  "description": "A SASS-based CSS grid framework for websites.",
+  "main": "index.js",
+  "scripts": {
+    "test": "ludigridtest",
+    "build-css": "node-sass --include-path scss scss/style.scss public/css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ludicrumedia/Ludigrid.git"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "framework"
+  ],
+  "author": "Marius Akerbæk and Egil Myklestad, Ludicrumedia",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Ludicrumedia/Ludigrid/issues"
+  },
+  "homepage": "https://github.com/Ludicrumedia/Ludigrid#readme",
+  "devDependencies": {
+    "node-sass": "^4.1.1",
+    "nodemon": "^1.11.0"
+  }
+}
